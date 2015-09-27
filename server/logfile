@@ -1,0 +1,25 @@
+LOG:  database system was shut down at 2015-09-27 01:45:32 EDT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  autovacuum launcher started
+LOG:  database system is ready to accept connections
+FATAL:  database "doubleentendre" does not exist
+FATAL:  database "imitation/" does not exist
+FATAL:  database "imitation" does not exist
+FATAL:  role "postgres" does not exist
+FATAL:  database "imitation/" does not exist
+FATAL:  database "doubleentendre" does not exist
+FATAL:  database "doubleentendre" does not exist
+FATAL:  database "imitation" does not exist
+LOG:  received smart shutdown request
+LOG:  autovacuum launcher shutting down
+LOG:  shutting down
+LOG:  database system is shut down
+LOG:  database system was shut down at 2015-09-27 01:49:09 EDT
+LOG:  MultiXact member wraparound protections are now enabled
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+ERROR:  syntax error at or near "." at character 1
+STATEMENT:  .tables
+	;
+ERROR:  syntax error at or near "." at character 1
+STATEMENT:  .table;
