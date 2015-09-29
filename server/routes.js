@@ -6,7 +6,7 @@ module.exports.bind = function (app) {
 
 	app.get('/players/', controllers.players.list);
 
-	app.get('/challenge/issue', controllers.challenge.issue);
+	app.post('/challenge/issue', controllers.challenge.issue);
 	
 	app.get('/challenge/result', controllers.challenge.issue);
 	app.post('/challenge/result', controllers.challenge.issue);

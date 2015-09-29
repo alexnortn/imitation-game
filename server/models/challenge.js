@@ -1,12 +1,16 @@
 
-let db = require('../db.js');
+let db = require('../db.js'),
+	norm = require('norm-sql');
 
 module.exports.create = function (spec) {
-	args = args || {};
+	spec = spec || {};
 
 	let dml = norm()
 		.insert("challenges")
-		.values(args.spec);
+		.values(spec);
+
+	console.log(dml.sql())
+	console.log(dml.binds())
 
 	return db.query(dml.sql(), dml.binds());
 };

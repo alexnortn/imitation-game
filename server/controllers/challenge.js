@@ -5,8 +5,8 @@ let db = require('../db.js'),
 
 module.exports.issue = function (req, res) {
 	challengeModel.create({
-		user_one_id: req.query.from,
-		user_two_id: req.query.to,
+		user_one_id: req.body.from,
+		user_two_id: req.body.to,
 		step: 1,
 	});
 
